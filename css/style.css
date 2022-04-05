@@ -4,6 +4,7 @@
     box-sizing: border-box;
     outline: none;
     list-style-type: none;
+    font-family: Nunito;
 }
 
 @font-face {
@@ -58,6 +59,12 @@ header {
 }
 #logo{
     cursor: pointer;
+}
+.only-visible-on-mobile{
+    display: none;
+}
+.view-print{
+    margin-right: 30px !important;
 }
 #search-input {
     background: transparent;
@@ -1013,14 +1020,34 @@ footer {
     .pdf-part h2 {
         font-size: 19px;
         line-height: 26px;
-        margin-bottom: 50px;
+        margin-bottom: 0px !important;;
         width: 80%;
         margin: auto;
     }
-
+    .pdf-part{
+        background: #FDFDFD;
+        box-shadow: 0px 4px 24px rgba(196, 196, 196, 0.54);
+        padding:20px;
+        width: 90%;
+        margin: auto;
+        max-width: 350px;
+    }
+    .only-visible-on-mobile{
+        display: block;
+        color: #939498;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        width: 71%;
+        margin: 12px auto 0;
+        text-align: center;
+    }
     .pdf-full-info {
         width: 90%;
         padding: 10px;
+        background: transparent;
+        box-shadow: none;
+        margin-bottom: 0;
     }
 
     .pdf-info h3 {
@@ -1038,6 +1065,17 @@ footer {
     }
     .shared-link ul>li {
         padding: 7px;
+    }
+ 
+    .pdf-info{
+        display: none;
+    }
+    .pdf-part h2 span {
+        text-transform: capitalize;
+    }
+    .functional-icon{
+        justify-content: center;
+        margin-top: 30px;
     }
 }
 
